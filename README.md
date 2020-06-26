@@ -7,15 +7,17 @@
 
 ## Install process
 
+#### Clone repository
+```
+git clone https://github.com/savenko/test-sb.git
+```
+
 #### Copy env file
 ```
 cp .env.example .env
 ```
 And edit `.env` set password in field ``DB_PASSWORD`` and ``GITHUB_API_KEY``
-#### Clone repository
-```
-git clone https://github.com/savenko/test-sb.git
-```
+
 #### Build project
 ````
 docker-compose build app
