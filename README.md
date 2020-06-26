@@ -16,7 +16,7 @@ And edit `.env` set password in field ``DB_PASSWORD`` and ``GITHUB_API_KEY``
 ```
 git clone https://github.com/savenko/test-sb.git
 ```
-####Build project
+#### Build project
 ````
 docker-compose build app
 ````
