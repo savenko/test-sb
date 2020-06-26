@@ -43,6 +43,17 @@ docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan config:cache
 ```
 
+# FrontEnd
+#### Install
+```
+docker-compose exec app npm install
+```
+
+#### Build Production
+```
+docker-compose exec app npm run prod
+```
+
 #### Open site in browser
 
 ```
@@ -50,7 +61,7 @@ http://server_domain_or_IP:8000
 ```
 For localhost it will be ``http://localhost:8000/``
 
-## Test
+# Test
 ``
 docker-compose exec app php artisan test
 ``
