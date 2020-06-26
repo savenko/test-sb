@@ -1,4 +1,4 @@
-#Test work for Salaryboard
+# Test work for Salaryboard
 
 <p>
 <strong>Created by:</strong> Alexander Savenko<br/>
@@ -7,14 +7,14 @@
 
 ## Install process
 
-####Copy env file
+#### Copy env file
 ```
 cp .env.example .env
 ```
 And edit `.env` set password in field ``DB_PASSWORD`` and ``GITHUB_API_KEY``
-####Clone repository
+#### Clone repository
 ```
-git clone ...
+git clone https://github.com/savenko/test-sb.git
 ```
 ####Build project
 ````
@@ -22,13 +22,28 @@ docker-compose build app
 ````
 This command can take long time
 
-####Run project in background
+#### Run project in background
 
 ```
 docker-compose up -d
 ```
 
-####Open site in browser
+#### Install dependencies for php
+```
+docker-compose exec app composer install
+```
+
+#### Install key
+```
+docker-compose exec app php artisan key:generate
+```
+
+#### For speed up site we will cache our configs
+```
+docker-compose exec app php artisan config:cache
+```
+
+#### Open site in browser
 
 ```
 http://server_domain_or_IP:8000
