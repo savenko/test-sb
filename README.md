@@ -1,3 +1,14 @@
+# Task
+Make endpoint /users which should accept search parameter q, example /users?q=rockstardev
+If q == ‘’ make http request to https://api.github.com/users 
+If q != ‘’ make http request to  https://api.github.com/search/users?q={param}
+Each github user has followers and repos. The aim is to retrieve all users from the first page (in parallel) by given filters, retrieve repos and followers for each user (in parallel) merge and serialize(in parallel) this data into a single response. 
+Please use Docker. We like Dockerising our services. Please ensure that your app can be fully self-contained.
+Documentation. This will include useful comments in your code and a Reade.md on how to install, manage and deploy the service you've built.
+Bonus: unit tests, show us cool patterns
+
+--
+
 # Test work for Salaryboard
 
 <p>
