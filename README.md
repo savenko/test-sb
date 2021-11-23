@@ -7,7 +7,6 @@ Please use Docker. We like Dockerising our services. Please ensure that your app
 Documentation. This will include useful comments in your code and a Reade.md on how to install, manage and deploy the service you've built.
 Bonus: unit tests, show us cool patterns
 
---
 
 # Test work for Salaryboard
 
